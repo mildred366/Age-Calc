@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="thestyle.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/my logo.jpeg">
+
+  <title>Age calculator app</title>
+
+</head>
+
+<body>
+
+  <main>
+    <div class="card">
+      <form class="form">
+        <div class="inputs">
+          <div class="input">
+            <label for="">DAY</label>
+            <input type="datetime" id="input1" placeholder="DD" class="iput" maxlength="2" size="2">
+            <div class="div"></div>
+          </div>
+          <div class="input">
+            <label for="">MONTH</label>
+            <input type="datetime" id="input2" placeholder="MM" class="iput" maxlength="2" size="2">
+            <div class="div"></div>
+          </div>
+          <div class="input">
+            <label for="">YEAR</label>
+            <input type="datetime" id="input3" placeholder="YYYY" class="iput" maxlength="4" size="4">
+            <div class="div"></div>
+          </div>
+        </div>
+        <div class="btn">
+          <div></div>
+          <button type="submit" id="btn"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        </div>
+      </form>
+      <div class="results">
+        <div class="date year"><span class="span s1">--</span> years</div>
+        <div class="date month"><span class="span s2">--</span> months</div>
+        <div class="date days"><span class="span s3">--</span> days</div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="attribution">
+      Proudly Created by <a href="https://www.linkedin.com/in/mildred-erubore/" target="_blank">Mildred</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

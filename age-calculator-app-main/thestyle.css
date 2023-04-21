@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%)
+}
+body {
+    color: var(--off-black);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--light-grey);
+    font-family: 'Poppins', sans-serif;
+}
+.card {
+    background-color: var(--white);
+    width: 840px;
+    height: 680px;
+    padding: 56px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 200px;
+}
+.card .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card .inputs .input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    height: 125px;
+}
+.card .inputs .input label {
+    color: var(--smokey-grey);
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+.card .inputs .input input {
+    width: 160px;
+    height: 72px;
+    padding: 15px 15px;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    border: 1px solid var(--light-grey);
+    border-radius: 7px;
+}
+.card .inputs .input input:focus {
+    outline: 1px solid hsl(259deg, 100%, 65%);
+}
+.card .inputs .input input:hover {
+    border-color: var(--off-black);
+}
+.error {
+    color: var(--light-red);
+    margin-top: 3px;
+    font-style: italic;
+    font-size: 13px;
+}
+.success {
+    display: none;
+}
+.card .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .btn div {
+    height: 1px;
+    width: 632px;
+    background-color: var(--light-grey);
+}
+.card .btn button {
+    border-radius: 50%;
+    border: none;
+    width: 96px;
+    height: 96px;
+    background-color: var(--purple);
+}
+.card .btn button:hover {
+    background-color: var(--off-black);
+}
+.card .results .date {
+    font-weight: 900;
+    font-size: 100px;
+    font-style: italic;
+    margin-top: -35px;
+}
+.card .results .date:first-child {
+    margin-top: -20px;
+}
+.card .results .date span {
+    color: var(--purple);
+}
+@media (max-width: 875px) {
+    .card {
+        width: 343px;
+        height: 486px;
+        padding: 50px 24px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 120px;
+    }
+    .card .inputs .input {
+        display: flex;
+        flex-direction: column;
+        margin-right: 16px;
+    }
+    .card .inputs .input label {
+        letter-spacing: 3px;
+        font-size: 14px;
+        margin-bottom: 4px;
+        margin-top: 0;
+    }
+    .card .inputs .input input {
+        width: 88px;
+        height: 54px;
+        padding: 10px 10px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .card .btn {
+        position: relative;
+        height: 70px;
+    }
+    .card .btn div {
+        height: 2px;
+        width: 295px;
+    }
+    .card .btn button {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+
+    }
+    .card .results .date {
+        font-size: 54px;
+        margin: 0;
+        height: 60px;
+        margin-top: -5px;
+    }
+    .card .results .date:first-child {
+        margin-top: 10px;
+    }
+    .error {
+        font-size: 8px;
+    }
+}
+
+
+.attribution {
+    /* font-size: 11px; */
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+
+.attribution a {
+    color: var(--purple);
+}
